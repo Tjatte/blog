@@ -5,43 +5,47 @@
 	border:0;
 	margin:0;
 	padding:0;
-}
+	}
 
 h2 {
 	margin: 10px;
 	text-align : center;
-}
+	}
+
+h3 {
+	color : #DF7401;
+	font-family : Tahoma;
+	}
+
+h4 {
+	font-size : 20px;
+	padding: 12px;
+	}
+
 p {
 	font-size: 14px;
 	padding: 10px;
 	text-align : center;
-}
-h4 {
-	font-size : 20px;
-	padding: 12px;
-
-}
+	}
 
 table.articles td{
 	font-family: Times;
 	border: solid 1px gray;
-	
-}
+	}
 
 table.articles th{
 	font-family: Helvetica;
 	border: solid 1px gray;
-	
-}
-
+	}
 
 hr {
 	border-top: solid 1px gray;
-}
+	}
+	
 body {
 	font-family : Arial, Sans-serif;
-
 	}
+	
 h1 {
 	font-size: 44px;
 	color: white;
@@ -63,17 +67,21 @@ form.login {
 	border-radius : 8px;
 	padding: 15px;
 	}
+	
 form.add_article {
-	width : 300px;
-
+	width : 100px;
 	}	
+	
+form.edit_article {
+	width : 200px;
+	}
 form fieldset {
 	border: 0;
 }
 
 form fieldset.actions{
 	text-align: right;
-	padding: 3px;
+	padding: 5px;
 	}
 		
 form fieldset.field div.row{
@@ -84,7 +92,7 @@ form fieldset.field div.row{
 		
 form fieldset.field div.row label{
 	display :inline-block;
-	width : 130;
+	width : 130px;
 	}
 	
 header{
@@ -92,24 +100,19 @@ header{
 	height: 99px;
 	}
 	
-h3 {
-	color : #DF7401;
-	font-family : Tahoma;
-	
-	}
+
 	
 fieldset {
 	border : 0px; 
-	color: white;
+	color: #000;
 	margin : 5px;
 	font-size: 12px;
 	padding: 4px;
 	margin: right;
-	
 	}	
 
 input , textarea, select, button{
-	border: 2px;
+	border: 2px solid #000;
 	}
 input.arrondi{
 	border-radius: 2px;
@@ -121,7 +124,7 @@ textarea {
 	}
 	
 row {
-	padding : 10px; 
+	padding : 15px; 
 	}	
 	
 button {
