@@ -5,8 +5,10 @@
 	$title = "Mon espace d'administration";
 	include_once('includes/header.php');
 ?>
-	Mon administration	
+	<?-- Mon administration -->
 
-	<h3><br>Bonjour <?php echo $_SESSION['user'];?></h3>
+	<p><br>Bonjour <?php echo $_SESSION['user']['username'];?></p>
+	
+	
 	<?php include_once('includes/footer.php');?>
 		

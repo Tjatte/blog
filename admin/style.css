@@ -24,18 +24,19 @@ h4 {
 
 p {
 	font-size: 14px;
-	padding: 10px;
+	padding: 8px;
 	text-align : center;
 	}
 
 table.articles td{
-	font-family: Times;
-	border: solid 1px gray;
+	font-family: Arial;
+	border: solid 1px black;
+
 	}
 
 table.articles th{
 	font-family: Helvetica;
-	border: solid 1px gray;
+	/*border: solid 1px gray;*/
 	}
 
 hr {
@@ -69,19 +70,22 @@ form.login {
 	}
 	
 form.add_article {
-	width : 100px;
+	width : 200px;
+	border: 1px;
+	color: black;
 	}	
 	
 form.edit_article {
 	width : 200px;
 	}
+	
 form fieldset {
 	border: 0;
 }
 
 form fieldset.actions{
 	text-align: right;
-	padding: 5px;
+	padding: 10px;
 	}
 		
 form fieldset.field div.row{
@@ -112,10 +116,10 @@ fieldset {
 	}	
 
 input , textarea, select, button{
-	border: 2px solid #000;
+	border: .5px solid #000;
 	}
 input.arrondi{
-	border-radius: 2px;
+	border-radius: 5px;
 }	
 	
 textarea {
@@ -124,15 +128,16 @@ textarea {
 	}
 	
 row {
-	padding : 15px; 
+	padding : 40px; 
 	}	
 	
 button {
 	border-radius : 2px;
 	height: 20px;
-	line-height: 28px;
+	line-height: 15px;
 	color : black;
-	corsur: pointer;
+	cursor: pointer;
+	widht: 100px;
 	}
 	
 button:hover	
@@ -140,7 +145,7 @@ button:hover
 
 /*Menu*/
 header nav {
-	background: rgba(100, 100, 100, 0.4);
+	background: #000;
 	min-width: 600px;
 }
 
@@ -148,7 +153,7 @@ header nav ul {
 	list-style: none;
 }
 
-header nav ul li.deconnection {
+header nav ul li.deconnexion {
 	float: right;
 	border: none;
 }
@@ -167,11 +172,11 @@ header nav ul li a{
 	text-decoration: none;
 	color: #fff;
 	transition-property: background;
-	transition-duration: 1.5s;
+	transition-duration: .5s;
 	transition-timing-function: ease;
 	font-size: 14px;
 	padding: 0 7px;
-	background: lightgray;
+	background: black;
 	
 	
 	}

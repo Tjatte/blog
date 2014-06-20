@@ -1,39 +1,19 @@
 <?php
 require_once('includes/authenticated.php');
-		include_once('includes/actions.php');
-	$title = "Mon espace d'administration";
-	include_once('includes/header.php');
-	
-	$query = mysql_query('SELECT id_article,title, date FROM articles');
-	?>
-	
-<h4>Gestion des articles</h4>
+include_once('includes/actions.php');
 
-<div class="actions">
-	<a href="add_article.php">Ajouter un article</a>
-	</div>
-	
-<table class="articles">
-	<thead>
-		<th style="widht: 30px;">ID</th>
-		<th style="widht: 200px">Titre</th>
-		<th style="widht: 800px">Date</th>
-		<th style="widht: 1000px">Actions</th>
-	</thead>
-	<?php 
-		while ($row = mysql_fetch_assoc($query)) {
-			echo '
-				<tr>
-					<td>' . $row['id_article'] . '</td>
-					<td>' . $row['title'] . '</td>
-					<td>' . $row['date'] . '</td>
-					<td>
-						<a href="edit_article.php?id_article='. $row['id_article'] .'" >Modifier</a>
-						<a href="gestion_articles.php?action=delete_article&id_article='. $row['id_article'].'" >Supprimer</a>
-					</td>
-				</tr>
-			';
-		}
-		?>
-</table>
-	<?php include_once('includes/footer.php');?>
+$title = "Gestion des articles";
+
+if (isset($_GET['action']) && $_GET['action'] === 'delete_article') {
+			mysql_query("DELETE FROM articles WHERE id_article=" . mysql_real_escape_string($_GET['id_article']));
+			
+			header ("Location: gestion_articles.php");
+		}	
+		
+$articles= mysql_query('SELECT id_article,title, date FROM articles');
+
+include_once('includes/header.php');
+require_once('views/gestion_articles.view.php');
+include_once('includes/footer.php');
+
+

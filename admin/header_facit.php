@@ -11,8 +11,11 @@
 <meta name="description" content="Ceci est l'espace Administration de mon blog" />
 </head>
 
-<body>
-	<header>
+
+
+
+	
+	//<header>
 		<h1>
 			Administration de mon blog
 		</h1>
@@ -25,4 +28,4 @@
 				<?php } ?>
 			</ul>
 		</nav>
-	</header>
+	</header>//
