@@ -7,7 +7,7 @@
 	
 	<body>
 	
-		Blog de Rita
+		Blog de Rita Ostensson
 		<a ref = 
 	</body>
 	
